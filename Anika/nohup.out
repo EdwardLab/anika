@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "active.py", line 48, in <module>
+    start_server(main, debug=True, host='0.0.0.0', port=9000)
+  File "/usr/local/lib/python3.8/dist-packages/pywebio/platform/tornado.py", line 373, in start_server
+    _, port = _setup_server(webio_handler=handler, port=port, host=host, static_dir=static_dir,
+  File "/usr/local/lib/python3.8/dist-packages/pywebio/platform/tornado.py", line 287, in _setup_server
+    server = app.listen(port, address=host, max_buffer_size=max_buffer_size)
+  File "/usr/local/lib/python3.8/dist-packages/tornado/web.py", line 2134, in listen
+    server.listen(
+  File "/usr/local/lib/python3.8/dist-packages/tornado/tcpserver.py", line 183, in listen
+    sockets = bind_sockets(
+  File "/usr/local/lib/python3.8/dist-packages/tornado/netutil.py", line 162, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
